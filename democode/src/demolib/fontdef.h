@@ -1,0 +1,10 @@
+#pragma once
+
+enum FontDataType
+{
+    FONTTYPE_1BPP_4BIT_NPIX,
+    FONTTYPE_1BPP_LZ4COUNTS_NPIX,
+    FONTTYPE_IMAGE_LIST,
+    FONTTYPE_CBM64,
+};
+
