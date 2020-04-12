@@ -5,15 +5,14 @@ Credits where credits are due:
 
 The following 3rd party resources were used:
 
-pmf_player - https://github.com/JarkkoPFC/arduino-music-player/
-exomizer   - https://bitbucket.org/magli143/exomizer
+- pmf_player - https://github.com/JarkkoPFC/arduino-music-player/
+- exomizer   - https://bitbucket.org/magli143/exomizer
 
-Colors for the screen border during the C64/Amiga-ish part were sampled from
-"A1000" by J.O.E, see http://artcity.bitfellas.org/index.php?a=show&id=11210
+- Colors for the screen border during the C64/Amiga-ish part were sampled from "A1000" by J.O.E, see http://artcity.bitfellas.org/index.php?a=show&id=11210
 
-3x5 by memesbruh03 - https://www.dafont.com/3x5-2.font
-Perfect DOS VGA by Zeh Fernando - https://www.dafont.com/perfect-dos-vga-437.font
-A500 Topaz font, TTF file of unknown origin
+- 3x5 by memesbruh03 - https://www.dafont.com/3x5-2.font
+- Perfect DOS VGA by Zeh Fernando - https://www.dafont.com/perfect-dos-vga-437.font
+- A500 Topaz font, TTF file of unknown origin
 
 
 How to compile the thing
@@ -49,11 +48,13 @@ you might plan ahead for that.
 
 Connect it like this:
 
+```
 Pin 4  o-----||-----> left audio channel
 Pin 13 o-----||-----> right audio channel
 Any GND pin directly to the audio GND.
+```
 
-As insulating capacitors ||, 1.0 µF works fine. Something close to that probably too.
+As insulating capacitors ||, 1.0 ÂµF works fine. Something close to that probably too.
 Don't connect the pins directly to the audio, they are at 0-5V level
 (instead of approx. -1..+1V that analog audio usually has) and the receiving device
 might be unhappy about that (magic smoke worst case). The caps make this a lot safer,
@@ -70,13 +71,19 @@ The binaries in this release archive are compiled for the ILI9481 display contro
 There is (untested) support for ILI9486 and HX8357C as well, so if you have those,
 go to democode/src/demolib/cfg-demo.h, look for this:
 
+```
 typedef fglcd::preset::ILI9481_Mega_Shield LCD;
+```
 
 and change it to
 
+```
 typedef fglcd::preset::ILI9486_Mega_Shield LCD;
+```
 -or-
+```
 typedef fglcd::preset::HX8357C_Mega_Shield LCD;
+```
 
 In case your display controller is 480x320 but none of the above,
 feel free to contact me and I might add support for your controller.
