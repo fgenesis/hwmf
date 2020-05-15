@@ -1,3 +1,9 @@
+[ ![](https://content.pouet.net/files/screenshots/00085/00085292.jpg) ](https://www.youtube.com/watch?v=OmHrJ7Wqagg)<br />
+(Click for youtube)
+
+* [pouët.net](https://www.pouet.net/prod.php?which=85292)
+* [win32 port](https://github.com/fgenesis/hwmf/releases/download/partyver/hwmf_partyver_win32_port.zip)
+
 PARTY VERSION!
 
 Credits where credits are due:
